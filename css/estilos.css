@@ -313,4 +313,7 @@ nav.responsive ul li{
   display: none;
 
   }
+   h2{
+  display: none; 
+ } 
 }
