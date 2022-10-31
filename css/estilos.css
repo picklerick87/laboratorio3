@@ -235,6 +235,14 @@ justify-content: center;
 .sheldon img{
    border: 5px solid red;
 }
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: gray;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
 @media screen and (max-width: 576px){
 .icon{
     margin-top: 5%;
@@ -291,4 +299,18 @@ nav.responsive ul li{
     text-align: center;
     padding: 1rem;
 }
+ ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  nav ul {
+  display: none;
+
+  }
 }
