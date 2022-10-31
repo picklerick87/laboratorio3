@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+header{
+    margin-top: 2%;
+    margin-right: 7%;
+    margin-bottom: 2%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background-color: black;
+}
+
+.icon{
+    display: none;
+}
+nav ul{
+    display:inline-block;
+    text-align: center;;
+    height: 50px; 
+    overflow: hidden;
+    width: 100%;
+    background:#3c3c3c;
+    margin:0;
+    padding: 5px 30px;
+}
+nav ul li{
+    float:left;
+    height:100%;
+    list-style:none;
+    border-right:1px solid #080808; 
+}
+nav ul li a{
+    width: 120px;
+    display:block; 
+    font-family:Arial; 
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:15px;
+    font-weight:bold;
+    margin-top: -50px; 
+    transition: 0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+    -webkit-transition: 0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+    -moz-transition: 0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+}
+ul li *{
+    display: inline-block;
+    line-height: 50px;
+
+}
+ul li a:hover{
+    margin-top:0;
+
+} 
+ul li a:before{
+    content:attr(data-text);
+    display: block;
+    color:#cdf745;
+} 
+
+a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+section{
+    max-width: 1300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.principal{
+    width: 100%;
+    height: 650px;
+    background-image: url("../images/imagendelinicio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    color: #ffffff;
+}
+.principal div{
+    padding: 5%;
+}
+.principal img{
+    max-width: 60%;
+    margin-bottom: 5%;
+}
+.secundario{
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+}
+.secundario div{
+    width: 33%;
+    padding: 2%;
+}
+.secundario div img{
+    width: 100%;
+    margin-bottom: 2%;
+}
+h1{
+    font-family: 'Rampart One', cursive;
+    font-size: 3rem;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    text-align: center;
+    color: white;
+}
+h2{ color: black;
+background-color: #6A0888;
+width: 100%;
+}
+h4{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+    margin-bottom: 1%;
+    font-family: arial ;
+    color:white;
+}
+span{
+    color: red;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+footer img{
+    padding-top: 3rem;
+    width: 100%;
+    height: auto;
+    margin-right: 1%;
+    max-width: 3.5rem;
+}
+
+#personajes{
+text-align: center;
+display: block;
+justify-content: center;
+border: 10px;
+border-color: white;
+border-left-style: solid;
+border-right-style: solid;
+}
+#personajes div{
+width: 33%;
+padding: 2%;
+}
+#personajes img{
+height: 250px;
+width: 220px;
+margin-left: 5rem;
+margin-bottom: 20px;
+}
+#galeria a{
+padding-right: 20px;
+padding-bottom: 20px;
+}
+
+#galeria a img {
+    width: 20%;
+    height: 187px;
+    margin-bottom: 5%;
+    margin-left: 1%;
+} 
+#caja{
+    color:white;
+}
+
+form {  
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color:white;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: .5em;
+}
+.sheldon{
+    text-align: center;
+display: flex; 
+justify-content: center;
+    height: 300px;
+    margin-top: 5%;
+    margin-bottom: 10%; 
+}
+.sheldon img{
+   border: 5px solid red;
+}
+@media screen and (max-width: 576px){
+.icon{
+    margin-top: 5%;
+    float: right;
+    display: block;
+}
+section{
+    max-width: 576px;
+    width: 100%;
+}
+.principal{
+    height: 350px;
+    align-items: center;
+}
+h2{
+    font-size: 1.3rem;
+    padding-right: 20%;
+}
+.secundario{
+    margin-top: 1%;
+    display: block;
+}
+.secundario div{
+    width: 100%;
+}
+.secundario div img{
+    margin-bottom: 0.5%;
+}
+p{
+    font-size: 1.3rem;
+    padding: 2%;
+}
+footer{
+    justify-content: space-around;
+    height: 100px;
+}
+footer img{
+    max-width: 4rem;
+    padding-top: 0px;
+    margin-right: 0px;
+}
+nav{
+    width: 100%;
+
+}
+ul{
+    display: none;
+}
+nav.responsive ul{
+    display: block;
+}
+nav.responsive ul li{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+}

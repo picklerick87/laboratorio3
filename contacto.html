@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>Producción en clase: Pixar</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/bigbang4.jpg" alt="Logo Pixar"></a>
+        </div>
+        <nav id="navegador">
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <ul>
+                <li><a data-text="Inicio" href="index.html">Inicio</a></li>
+                <li><a data-text="Personajes"href="personajes.html">Personajes</a></li>
+                <li><a data-text="Galeria" href="galeria.html">Galería</a></li>
+                <li><a data-text="Contacto" href="contacto.html">Contacto</a></li>
+                <li><a data-text="Trivia" href="trivia.html">Trivia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="principal">
+            <div>
+                
+                <h2>Descubre el entretenimiento al maximo.</h2>
+            </div>
+            </article>
+        <h1>Contactate con Sheldon</h1>
+        <form action="/my-handling-form-page" method="post">
+ <ul>
+  <li>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="user_name">
+  </li>
+  <li>
+    <label for="mail">Mail:</label>
+    <input type="email" id="mail" name="user_mail">
+  </li>
+  <li>
+    <label for="msg">Mensaje:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </li>
+ </ul>
+</form>
+        
+    </section>
+    <br><br><hr/>
+    <footer>
+         <a href="https://es-la.facebook.com/TheBigBangTheory/"> <img src="images/redes/face.jpg" alt="Facebook"></a>
+        <a href="https://twitter.com/bigbangtheory?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/redes/twi.jpg" alt="Twitter"></a>
+        <a href="https://www.youtube.com/watch?v=U1KGRnWjllg"><img src="images/redes/youtube1.jpg" alt="Youtube"></a>
+        <a href="https://www.instagram.com/bigbangtheory/?hl=es"><img src="images/redes/insta.png" alt="Instagram"></a>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("navegador");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+}
+
+    </script>
+</body>
+</html>
