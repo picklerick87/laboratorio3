@@ -17,41 +17,48 @@ body{
 .icon{
     display: none;
 }
-nav ul{
-    display:inline-block;
-    text-align: center;;
-    height: 50px; 
-    overflow: hidden;
-    width: 100%;
-    background:#3c3c3c;
-    margin:0;
-    padding: 5px 30px;
+header {
+  width: 80%;
+  padding: 40px;
+  color: white;
+  text-align: left;
+  background: #112d4e;
 }
-nav ul li{
-    float:left;
-    height:100%;
-    list-style:none;
-    border-right:1px solid #080808; 
-}
-nav ul li a{
-    width: 120px;
-    display:block; 
-    font-family:Arial; 
-    text-decoration: none;
-    text-transform: uppercase;
-    color:#fff;
-    font-size:15px;
-    font-weight:bold;
-    margin-top: -50px; 
-    transition: 0.6s cubic-bezier(0.1,0.1,0.5,1.4);
-    -webkit-transition: 0.6s cubic-bezier(0.1,0.1,0.5,1.4);
-    -moz-transition: 0.6s cubic-bezier(0.1,0.1,0.5,1.4);
-}
-ul li *{
-    display: inline-block;
-    line-height: 50px;
+
+nav ul {
+  background: #164884;
+  text-align: right;
+  list-style: none;
+  overflow: hidden;
 
 }
+
+ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all ease-in-out 250ms;
+  text-align: left;
+}
+
+ul li:hover {
+  background: #112d4e;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #112d4e;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
 ul li a:hover{
     margin-top:0;
 
@@ -142,8 +149,7 @@ footer img{
 
 #personajes{
 text-align: center;
-display: block;
-justify-content: center;
+display: inline-block;
 border: 10px;
 border-color: white;
 border-left-style: solid;
@@ -159,6 +165,8 @@ width: 220px;
 margin-left: 5rem;
 margin-bottom: 20px;
 }
+
+
 #galeria a{
 padding-right: 20px;
 padding-bottom: 20px;
@@ -235,14 +243,8 @@ justify-content: center;
 .sheldon img{
    border: 5px solid red;
 }
-.hide {
-  padding: 16px;
-  font-size: 22px;
-  background: gray;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
+
+
 @media screen and (max-width: 576px){
 .icon{
     margin-top: 5%;

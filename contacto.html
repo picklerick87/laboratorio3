@@ -17,11 +17,11 @@
         <nav id="navegador">
            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             <ul>
-                <li><a data-text="Inicio" href="index.html">Inicio</a></li>
-                <li><a data-text="Personajes"href="personajes.html">Personajes</a></li>
-                <li><a data-text="Galeria" href="galeria.html">Galería</a></li>
-                <li><a data-text="Contacto" href="contacto.html">Contacto</a></li>
-                <li><a data-text="Trivia" href="trivia.html">Trivia</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
             </ul>
         </nav>
     </header>
@@ -33,22 +33,49 @@
             </div>
             </article>
         <h1>Contactate con Sheldon</h1>
-        <form action="/my-handling-form-page" method="post">
- <ul>
-  <li>
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="user_name">
-  </li>
-  <li>
-    <label for="mail">Mail:</label>
-    <input type="email" id="mail" name="user_mail">
-  </li>
-  <li>
-    <label for="msg">Mensaje:</label>
-    <textarea id="msg" name="user_message"></textarea>
-  </li>
- </ul>
-</form>
+        <div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nombre</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Apellido</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Pais</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Argentina</option>
+          <option value="canada">Chile</option>
+          <option value="usa">Bolivia</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Mensaje</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="Asunto" placeholder="Escribir aqui.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+</div>
         
     </section>
     <br><br><hr/>
