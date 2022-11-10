@@ -223,6 +223,7 @@ textarea:focus {
 textarea {
   vertical-align: top;
   height: 5em;
+  resize: none;
 }
 
 .button {
