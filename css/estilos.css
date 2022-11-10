@@ -319,4 +319,8 @@ nav.responsive ul li{
    h2{
   display: none; 
  } 
+ #galeria a img{
+  display: inline-flex;
+  width: 40%;
+ }
 }
