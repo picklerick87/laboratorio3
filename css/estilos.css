@@ -323,4 +323,7 @@ nav.responsive ul li{
   display: inline-flex;
   width: 40%;
  }
+ #personajes img{
+  width: 30%;
+ }
 }
